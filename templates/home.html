@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Job</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Get A Job</h1>
+    </header>
+    <div class="container">
+        <img class="job-image" src="https://tse4.mm.bing.net/th?id=OIG2.U9hsrhWnN59bgPyLnPTb&pid=ImgGn" height="320"
+            width="500" alt="Job Image">
+        <h2 class="section-title">About "Get A Job"</h2>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.
+        </p>
+        <h2 class="section-title">Open Position:</h2>
+        <div>
+            {% for job in jobs %}
+                {% include 'jobItem.html' %}
+            {% endfor %}
+        </div>
+        <button class="contact-button">Contact Us</button>
+    </div>
+</body>
+
+</html>
