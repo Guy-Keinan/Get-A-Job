@@ -29,11 +29,13 @@
         <h2 class="section-title">Open Position:</h2>
         <div>
             {% for job in jobs %}
-                {% include 'jobItem.html' %}
+            {% include 'jobItem.html' %}
             {% endfor %}
         </div>
         <button class="contact-button">Contact Us</button>
     </div>
 </body>
+{% include 'footer.html' %}
+
 
 </html>
